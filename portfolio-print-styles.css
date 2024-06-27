@@ -1,0 +1,115 @@
+@page {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24pt;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 14pt;
+  font-style: italic;
+}
+
+.language-toggle,
+.download-pdf,
+nav {
+  display: none;
+}
+
+section {
+  margin-bottom: 20px;
+  page-break-inside: avoid;
+}
+
+h2 {
+  font-size: 18pt;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 10pt;
+  margin-top: 20px;
+}
+
+/* Add a decorative background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      transparent 25%,
+      transparent 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    ),
+    linear-gradient(
+      45deg,
+      #f3f3f3 25%,
+      transparent 25%,
+      transparent 75%,
+      #f3f3f3 75%,
+      #f3f3f3
+    );
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  opacity: 0.1;
+}
+
+#controls {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+#controls button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Adjust the header padding to accommodate the fixed controls */
+header {
+  padding-top: 60px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Aspiring Software Developer</title>
+    <link rel="stylesheet" href="portfolio-print-styles.css" />
+    <link rel="stylesheet" href="print-styles.css" media="print" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="controls">
+      <button id="languageToggle" class="language-toggle">ES</button>
+      <button
+        id="downloadPDF"
+        class="download-pdf"
+        data-en="Download PDF"
+        data-es="Descargar PDF"
+      >
+        Download PDF
+      </button>
+    </div>
+
+    <div id="portfolio-content">
+      <header>
+        <h1>Williams Caro Galvan</h1>
+        <p>Aspiring Software Developer</p>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
+          <li>
+            <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" data-en="Projects" data-es="Proyectos"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of Nav Menu-->
+
+      <div class="container">
+        <section id="about">
+          <h2 data-en="About Me" data-es="Sobre mí">About Me</h2>
+          <p
+            data-en="Aspiring software developer passionate about creating innovative solutions. As a self-directed learner following a virtual program at my own pace, I'm dedicated to mastering the art of coding and making a positive impact in the tech world."
+            data-es="Desarrollador de software en ciernes, apasionado por crear soluciones innovadoras. Como aprendiz autodidacta siguiendo un programa virtual a mi propio ritmo, estoy dedicado a dominar el arte de la programación y hacer un impacto positivo en el mundo tecnológico."
+          >
+            Aspiring software developer passionate about creating innovative
+            solutions. As a self-directed learner following a virtual program at
+            my own pace, I'm dedicated to mastering the art of coding and making
+            a positive impact in the tech world.
+          </p>
+        </section>
+
+        <section id="skills">
+          <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
+          <ul>
+            <li
+              data-en="HTML, CSS, JavaScript (Beginner)"
+              data-es="HTML, CSS, JavaScript (Principiante)"
+            >
+              HTML, CSS, JavaScript (Beginner)
+            </li>
+            <li data-en="Problem Solving" data-es="Resolución de problemas">
+              Problem Solving
+            </li>
+            <li data-en="Quick Learner" data-es="Aprendizaje rápido">
+              Quick Learner
+            </li>
+            <li data-en="Team Collaboration" data-es="Colaboración en equipo">
+              Team Collaboration
+            </li>
+          </ul>
+        </section>
+
+        <section id="projects">
+          <h2 data-en="Projects" data-es="Proyectos">Projects</h2>
+          <div class="project">
+            <h3
+              data-en="Personal Portfolio Website"
+              data-es="Sitio web de portafolio personal"
+            >
+              Personal Portfolio Website
+            </h3>
+            <p
+              data-en="This website you're currently viewing! Built with HTML, CSS, and JavaScript to showcase my skills and projects."
+              data-es="¡Este sitio web que estás viendo actualmente! Construido con HTML, CSS y JavaScript para mostrar mis habilidades y proyectos."
+            >
+              This website you're currently viewing! Built with HTML, CSS, and
+              JavaScript to showcase my skills and projects.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2 data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
+          <p data-en="Email:" data-es="Correo electrónico:">
+            Email: your.email@example.com
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/yourprofile"
+              data-en="Your LinkedIn Profile"
+              data-es="Tu perfil de LinkedIn"
+              >Your LinkedIn Profile</a
+            >
+          </p>
+          <p>
+            GitHub:
+            <a
+              href="https://github.com/yourusername"
+              data-en="Your GitHub Profile"
+              data-es="Tu perfil de GitHub"
+              >Your GitHub Profile</a
+            >
+          </p>
+        </section>
+      </div>
+
+      <footer>
+        <p
+          data-en="© 2024 Your Name. All rights reserved."
+          data-es="© 2024 Tu Nombre. Todos los derechos reservados."
+        >
+          © 2024 Your Name. All rights reserved.
+        </p>
+      </footer>
+    </div>
+
+    <script src="portfolio-script.js"></script>
+  </body>
+</html>
