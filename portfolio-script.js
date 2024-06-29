@@ -53,7 +53,7 @@ downloadPDF.addEventListener("click", () => {
   const element = document.getElementById("portfolio-content");
   const opt = {
     margin: 10,
-    filename: "portfolio.pdf",
+    filename: "Williamscarog_cv.pdf",
     image: { type: "jpeg", quality: 0.98 },
     html2canvas: { scale: 2 },
     jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
