@@ -1,409 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - Aspiring Software Developer</title>
-    <link rel="stylesheet" href="portfolio-print-styles.css" />
-    <link rel="stylesheet" href="print-styles.css" media="print" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </head>
-  <body>
-    <div id="controls">
-      <button id="languageToggle" class="language-toggle">ES</button>
-      <button
-        id="downloadPDF"
-        class="download-pdf"
-        data-en="Download PDF"
-        data-es="Descargar PDF"
-      >
-        Download PDF
-      </button>
-    </div>
 
-    <div id="portfolio-content">
-      <header>
-        <h1>Williams Caro Galvan</h1>
-        <p>Aspiring Software Developer</p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Williamscarog - Aspiring Software Developer</title>
+  <link rel="stylesheet" href="portfolio-print-styles.css" />
+  <link rel="stylesheet" href="print-styles.css" media="print" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Fuentes Roboto-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
 
-      <nav>
+<body>
+  <div id="controls">
+    <button id="languageToggle" class="language-toggle">ES</button>
+    <button id="downloadPDF" class="download-pdf" data-en="Download PDF" data-es="Descargar PDF">
+      Download PDF
+    </button>
+  </div>
+
+  <div id="portfolio-content">
+    <header>
+      <h1>Williams Caro Galvan</h1>
+      <p>Aspiring Software Developer</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
+        <li>
+          <a href="#experience" data-en="Experience" data-es="Experiencía">Experience</a>
+        </li>
+        <li>
+          <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+        </li>
+        <li>
+          <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        </li>
+        <li>
+          <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+        </li>
+        <li>
+          <a href="#languages" data-en="Languages" data-es="Idiomas">Languages</a>
+        </li>
+        <li>
+          <a href="#education" data-en="Education" data-es="Estudios">Education</a>
+        </li>
+        <li>
+          <a href="#references" data-en="References" data-es="Contacto">Referencias</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- End of Nav Menu-->
+
+    <div class="container">
+      <section id="about">
+        <h2 data-en="About Me" data-es="Sobre mí">About Me</h2>
+        <p data-en="I am a software developer passionate about technology from an early age. I started my studies in 2013 and formally in 2016 at the Instituto Tecnológico de las Américas (ITLA). I have gained experience in various programming languages and frameworks, as well as agile methodologies. I consider myself a person in constant learning, always seeking to stay at the forefront and take on new challenges. Additionally, I have a solid background in youth leadership and social volunteering, and I am committed to developing my technical, spiritual, and soft skills. My goal is to create tools that make life easier for people."
+          data-es="Soy un desarrollador de software apasionado por la tecnología desde una edad temprana. Comencé mis estudios en 2013 y formalmente en 2016 en el Instituto Tecnológico de las Américas (ITLA). He adquirido experiencia en varios lenguajes de programación y frameworks, así como en metodologías ágiles. Me considero una persona en constante aprendizaje, siempre buscando estar a la vanguardia y asumir nuevos retos. Además, tengo una sólida formación en liderazgo juvenil y voluntariado social, y estoy comprometido con el desarrollo de mis habilidades tanto técnicas como espirituales y blandas. Mi objetivo es emprender y crear herramientas que faciliten la vida de las personas.">
+          I am a software developer passionate about technology from an early
+          age. I started my studies in 2013 and formally in 2016 at the
+          Instituto Tecnológico de las Américas (ITLA). I have gained
+          experience in various programming languages and frameworks, as well
+          as agile methodologies. I consider myself a person in constant
+          learning, always seeking to stay at the forefront and take on new
+          challenges. Additionally, I have a solid background in youth
+          leadership and social volunteering, and I am committed to developing
+          my technical, spiritual, and soft skills. My goal is to create tools
+          that make life easier for people.
+        </p>
+      </section>
+
+      <section id="experience">
+        <h2 data-en="Work Experience" data-es="Experiencia Laboral">
+          Work Experience
+        </h2>
+        <!--From here just repeat-->
+        <strong>
+          <p data-en="Software Development Intern" data-es="Pasante de Desarrollo de Software">
+            Software Development Intern
+          </p>
+        </strong>
+        <p>AiLogic</p>
+        <p>2021 - 2022</p>
         <ul>
-          <li><a href="#about" data-en="About" data-es="Sobre mí">About</a></li>
-          <li>
-            <a href="#experience" data-en="Experience" data-es="Experiencía"
-              >Experience</a
-            >
+          <li data-en="Development of an educational plataform as a front-end programmer." data-es="Desarrollo de una plataforma educativa como programador de
+            front-end.">
+            Development of an educational plataform as a front-end programmer.
           </li>
-          <li>
-            <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+          <li data-en="Use of HTML, CSS, JS, React." data-es="Utilización de HTML, CSS, JavaScript, React.">
+            Use of HTML, CSS, JS, React.
           </li>
-          <li>
-            <a href="#projects" data-en="Projects" data-es="Proyectos"
-              >Projects</a
-            >
+          <li data-en="Implementation of agile methodologies such as Scrum and Kanbam."
+            data-es="Implementación de metodologías ágiles como Scrum y Kanban.">
+            Implementation of agile methodologies such as Scrum and Kanbam.
           </li>
-          <li>
-            <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+          <br /><br /><br />
+        </ul>
+
+        <!--From here just repeat for another seccion-->
+        <strong>
+          <p data-en="User Support and Customer Service." data-es="Atención al Usuario y Servicio al Cliente.">
+            User Support and Customer Service.
+          </p>
+        </strong>
+        <p data-en="Cuevas Leclerc Medical Center" data-es="Centro Médico Cuevas Leclerc">
+          Cuevas Leclerc Medical Center
+        </p>
+        <p>2016 - 2017</p>
+        <ul>
+          <li data-en="User support in medical emergencies and Health insurance verification and validation and casher."
+            data-es="Atención al usuario en emergencias medicas, verificación de
+            seguros de salud y cajero.">
+            User support in medical emergencies and Health insurance verification and validation and casher.
           </li>
-          <li>
-            <a href="#expertise" data-en="Expertise" data-es="Contacto"
-              >Expertise</a
-            >
+          <li data-en="Manage of forms and applications for medical care in emergency."
+            data-es="Gestión de formularios y aplicaciones para atención médica en emergencias.">
+            Manage of forms and applications for medical care in emergency.
+
           </li>
-          <li>
-            <a href="#languages" data-en="Languages" data-es="Idiomas"
-              >Languages</a
-            >
+          <br /><br /><br />
+        </ul>
+
+        <!--From here just repeat-->
+        <strong>
+          <p data-en="Social Volunteer And Community Manager" data-es="Voluntario Social y Community Manager">
+            Social Volunteer And Community Manager
+          </p>
+        </strong>
+        <p data-en="Family Federation for World Peace and Unification"
+          data-es="Federación de Familias para la Paz y la Unificación Mundial">
+          Family Federation for World Peace and Unification
+        </p>
+        <p>2019 - 2020</p>
+        <ul>
+          <li data-en="Organization and leadership of youth events and activities."
+            data-es="Organización y liderazgo de eventos y actividades juveniles.">
+            Organization and leadership of youth events and activities.
           </li>
-          <li>
-            <a href="#education" data-en="Education" data-es="Estudios"
-              >Education</a
-            >
+          <li data-en="Social media management  and event promotion."
+            data-es="Administración de redes sociales y promoción de eventos.">
+            Social media management and event promotion.
           </li>
-          <li>
-            <a href="#references" data-en="References" data-es="Contacto"
-              >Referencias</a
-            >
+          <br /><br /><br />
+        </ul>
+
+        <!--From here just repeat-->
+        <strong>
+          <p data-en="Youth Leader" data-es="Líder Juvenil">Youth Leader</p>
+        </strong>
+        <p data-en="Family Federation for World Peace and Unification"
+          data-es="Federación de Familias para la Paz y la Unificación Mundial">
+          Family Federation for World Peace and Unification
+        </p>
+        <p data-en="2023 - Present" data-es="2023 - Presente">
+          2023 - Present
+        </p>
+        <ul>
+          <li data-en="Youth center guidance and direction in Vallaguana, Monteplata."
+            data-es="Dirección de un centro juvenil en Vallaguana, Monteplata.">
+            Youth center guidance and direction in Vallaguana, Monteplata.
+          </li>
+          <li data-en="Strengthening and supporting young people through various social and educational activities."
+            data-es="Fortalecimiento y apoyo a jóvenes a través de diversas actividades sociales y educativas.">
+            Strengthening and supporting young people through various social and educational activities.
+          </li>
+          <br /><br /><br />
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
+        <ul>
+          <li data-en="Programing Languages:   [Java, C#, JavaScript, Python] (Mid-Senior)"
+            data-es="Lenguajes De Programación:   [Java, C#, JavaScript, Python] (Mid-Senior)">
+            Programing Languages: [Java, C#, JavaScript, Python] (Mid-Senior)
+          </li>
+          <li data-en="FrontEnd:   [HTML, CSS, React] (Advance)" data-es="FrontEnd [HTML, CSS, React] (Advance)">
+            FrontEnd [HTML, CSS, React] (Advance)
+          </li>
+          <li data-en="Operative Systems:   [Windows, Linux, MacOs] (Advance)"
+            data-es="Sistemas Operativos:   [Windows, Linux, MacOs] (Avanzado)">
+            Operative Systems: [Windows, Linux, MacOs] (Advance)
+          </li>
+          <li data-en="Version Control:   [Git, GitHub] (Advance)"
+            data-es="Control de Versiones:   [Git, GitHub] (Avanzado)">
+            Version Control: [Git, GitHub] (Advance)
+          </li>
+          <li data-en="Graphic Design:   [Canva] (Advance)" data-es="Deseño Grafico:   [Canva] (Avanzado)">
+            Graphic Design: [Canva] (Advance)
+          </li>
+          <li data-en="Databases:   [Oracle] (Mid)" data-es="Base De Datos:   [Oracle] (Mid)">
+            Databases: [Oracle] (Mid)
+          </li>
+          <li data-en="User Interface and User Experience (Advance)"
+            data-es="Interfaz De Usuario y Experiencia De Usuario (Avanzado)">
+            User Interface and User Experience (Advance)
+          </li>
+          <li
+            data-en="Tecnic Skills   [ChatGPT | ClaudeAI | Gemini | Figma | MS Office | Notion | Flowchart | Pseudocode ]"
+            data-es="Habilidades Tecnicas [ChatGPT | ClaudeAI | Gemini | Figma | MS Office | Notion | Flowchart | Pseudocode ]">
+            Tecnic Skills [ChatGPT | ClaudeAI | Gemini | Figma | MS Office | Notion | Flowchart | Pseudocode ]
+          </li>
+          <li data-en="Team Collaboration   [Scrum Master, Kanban, Pomodoro | Desing Thinking]"
+            data-es="Colaboración en equipo [Scrum Master | Kanban | Pomodoro | Desing Thinking]">
+            Team Collaboration [Scrum Master, Kanban, Pomodoro | Desing Thinking]
+          </li>
+          <li
+            data-en="Soft Skills:   [Leadership | Teamwork | Focus and Productivity | Problem Solving | Quick Learner | Participation In Entrepreneurship Competitions]"
+            data-es="Habilidades Blandas   [Liderazgo| Trabajo En Equipo | Enfoque y productividad | Resolución de problemas | Aprendizaje rápido | Participación En Competencias De Emprendimiento]">
+            Soft Skills: [Leadership | Teamwork | Focus and Productivity | Problem Solving | Quick Learner |
+            Participation In Entrepreneurship Competitions]
           </li>
         </ul>
-      </nav>
-      <!-- End of Nav Menu-->
+      </section>
+      <!--Habilidades-->
 
-      <div class="container">
-        <section id="about">
-          <h2 data-en="About Me" data-es="Sobre mí">About Me</h2>
-          <p
-            data-en="I am a software developer passionate about technology from an early age. I started my studies in 2013 and formally in 2016 at the Instituto Tecnológico de las Américas (ITLA). I have gained experience in various programming languages and frameworks, as well as agile methodologies. I consider myself a person in constant learning, always seeking to stay at the forefront and take on new challenges. Additionally, I have a solid background in youth leadership and social volunteering, and I am committed to developing my technical, spiritual, and soft skills. My goal is to create tools that make life easier for people."
-            data-es="Soy un desarrollador de software apasionado por la tecnología desde una edad temprana. Comencé mis estudios en 2013 y formalmente en 2016 en el Instituto Tecnológico de las Américas (ITLA). He adquirido experiencia en varios lenguajes de programación y frameworks, así como en metodologías ágiles. Me considero una persona en constante aprendizaje, siempre buscando estar a la vanguardia y asumir nuevos retos. Además, tengo una sólida formación en liderazgo juvenil y voluntariado social, y estoy comprometido con el desarrollo de mis habilidades tanto técnicas como espirituales y blandas. Mi objetivo es emprender y crear herramientas que faciliten la vida de las personas."
-          >
-            I am a software developer passionate about technology from an early
-            age. I started my studies in 2013 and formally in 2016 at the
-            Instituto Tecnológico de las Américas (ITLA). I have gained
-            experience in various programming languages and frameworks, as well
-            as agile methodologies. I consider myself a person in constant
-            learning, always seeking to stay at the forefront and take on new
-            challenges. Additionally, I have a solid background in youth
-            leadership and social volunteering, and I am committed to developing
-            my technical, spiritual, and soft skills. My goal is to create tools
-            that make life easier for people.
+      <section id="projects">
+        <h2 data-en="Projects" data-es="Proyectos">Projects</h2>
+        <div class="project">
+          <h3 data-en="Personal Portfolio Website" data-es="Sitio web de portafolio personal">
+            Personal Portfolio Website
+          </h3>
+          <p data-en="This website you're currently viewing! Built with HTML, CSS, and JavaScript to showcase my skills and projects."
+            data-es="¡Este sitio web que estás viendo actualmente! Construido con HTML, CSS y JavaScript para mostrar mis habilidades y proyectos.">
+            This website you're currently viewing! Built with HTML, CSS, and
+            JavaScript to showcase my skills and projects.
           </p>
-        </section>
+        </div>
+      </section>
 
-        <section id="experience">
-          <h2 data-en="Work Experience" data-es="Experiencia Laboral">
-            Work Experience
-          </h2>
-          <!--From here just repeat-->
-          <p
-            data-en="Intership Software Development"
-            data-es="Pasante de Desarrollo de Software"
-          >
-            Intership Software Development
-          </p>
-          <p>AiLogic</p>
-          <p>2021 - 2022</p>
-          <ul>
-            <li
-              data-en="Development of an educative plataform as front-end developer"
-              data-es="Desarrollo de una plataforma educativa como programador de
-            front-end."
-            >
-              Development of an educative plataform as front-end developers
-            </li>
-            <li
-              data-en="Use of HTML, CSS, JS, React"
-              data-es="Utilización de HTML, CSS, JavaScript, React."
-            >
-              Use of HTML, CSS, JS, React
-            </li>
-            <li
-              data-en="Implementation of agile methodologies as Scrum and Kanbam"
-              data-es="Implementación de metodologías ágiles como Scrum y Kanban."
-            >
-              Implementation of agile methodologies as Scrum and Kanbam
-            </li>
-            <br /><br /><br />
-          </ul>
+      <section id="contact">
+        <h2 data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
+        <p data-en="Email: williamscaro194@hotmail.com" data-es="Correo electrónico: williamscaro194@hotmail.com">
+          Email: williamscaro194@hotmail.com
+        </p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/williamscarog" data-en="Williamscarog"
+            data-es="Williamscarog">Williamscarog</a>
+        </p>
+        <p>
+          GitHub:
+          <a href="https://github.com/williamscarog" data-en="Williamscarog" data-es="Williamscarog">Williamscarog</a>
+        </p>
+      </section>
 
-          <!--From here just repeat for another seccion-->
-          <p
-            data-en="Customer Service and [falta aténción al usuario]"
-            data-es="Atención al Usuario y Servicio al Cliente."
-          >
-            Customer Service and [falta aténción al usuario]
-          </p>
-          <p
-            data-en="Cuevas Leclerc Medical Clinic"
-            data-es="Centro Médico Cuevas Leclerc"
-          >
-            Cuevas Leclerc Medical Clinic.
-          </p>
-          <p>2016 - 2017</p>
-          <ul>
-            <li
-              data-en="User attention in medical emergencies, secure insurance validation and casher."
-              data-es="Atención al usuario en emergencias medicas, verificación de
-            seguros de salud y cajero."
-            >
-              User attention in medical emergencies, secure insurance validation
-              and casher.
-            </li>
-            <li
-              data-en="Manage emergencies check in and medical aplications for emergencies attention."
-              data-es="Gestión de formularios y aplicaciones para atención médica en
-            emergencias."
-            >
-              Manage emergencies check in and medical aplications for
-              emergencies attention.
+      <section id="languages">
+        <h2 data-en="Languages" data-es="Idiomas">Languages</h2>
+        <ul>
+          <li data-es="Español (Nativo)" data-en="Spanish (Native)">
+            Spanish (Native)
+          </li>
+          <li data-es="Inglés (Intermedio)" data-en="English (Intermediate)">
+            English (Intermediate)
+          </li>
+          <li data-es="Coreano (Básico)" data-en="Korean (Basic)">
+            Korean (Basic)
+          </li>
+        </ul>
+      </section>
 
-              <br /><br /><br />
-            </li>
-          </ul>
-
-          <!--From here just repeat-->
-          <p
-            data-en="Social volunteer and Community Manager"
-            data-es="Voluntario Social y Community Manager"
-          >
-            Social volunteer and Community Manager
-          </p>
-          <p
-            data-en="Family Federation for World Peace and Unification"
-            data-es="Federación de Familias para la Paz y la Unificación Mundial"
-          ></p>
-          <p>2019 - 2020</p>
-          <ul>
-            <li
-              data-en="Organization and Leadership of youth events and activities."
-              data-es="Organización y liderazgo de eventos y actividades juveniles."
-            >
-              Organization and Leadership of youth events and activities.
-            </li>
-            <li
-              data-en="Social Media admin and Events promoving."
-              data-es="Administración de redes sociales y promoción de eventos."
-            >
-              Social Media admin and Events promoving.
-            </li>
-            <br /><br /><br />
-          </ul>
-
-          <!--From here just repeat-->
-          <p data-en="Youth Leader">Líder Juvenil</p>
-          <p
-            data-en="Family Federation for World Peace and Unification"
-            data-es="Federación de Familias para la Paz y la Unificación Mundial"
-          >
-            Family Federation for World Peace and Unification
-          </p>
-          <p>2023 - Presente</p>
-          <ul>
-            <li
-              data-en="Youth center guidance and direction in Vallaguana, Monteplata."
-              data-es="Dirección de un centro juvenil en Vallaguana, Monteplata."
-            >
-              Youth center guidance and direction in Vallaguana, Monteplata.
-            </li>
-            <li
-              data-en="[Traducir]"
-              data-es="Fortalecimiento y apoyo a jóvenes a través de diversas actividades
-            sociales y educativas."
-            >
-              [Traducir]
-            </li>
-            <br /><br /><br />
-          </ul>
-        </section>
-
-        <section id="skills">
-          <h2 data-en="Skills" data-es="Habilidades">Skills</h2>
-          <ul>
-            <li
-              data-en="FrontEnd   [HTML, CSS, JavaScript] (Advance)"
-              data-es="HTML, CSS, JavaScript (Avanzado)"
-            >
-              FrontEnd [HTML, CSS, JavaScript] (Advance)
-            </li>
-            <li
-              data-en="Soft Skills   [Focus, Problem Solving, Quick Learner]"
-              data-es="Habilidades Blandas   [Enfoque, Resolución de problemas, Aprendizaje rápido]"
-            >
-              Soft Skills [Focus, Problem Solving, Quick Learner]
-            </li>
-            <li
-              data-en="Tecnic Skills   [AI | Git | Github | UI desing on Figma | UX | Flowchart | Pseudocode ]"
-              data-es="Habilidades Tecnicas [IA | Git, Diseño UI en figma, UX, Diagrama Flujo, Pseudocodigo]"
-            >
-              Tecnic Skills [AI | Git | Github | UI desing on Figma | UX |
-              Flowchart | Pseudocode ]
-            </li>
-            <li
-              data-en="Team Collaboration   [Scrum Master, Canvan, Pomodoro]"
-              data-es="Colaboración en equipo [Scrum Master, Canvan, Pomodoro]"
-            >
-              Team Collaboration [Scrum Master, Cambam, Pomodoro]
-            </li>
-          </ul>
-        </section>
-        <!--Habilidades-->
-
-        <section id="projects">
-          <h2 data-en="Projects" data-es="Proyectos">Projects</h2>
-          <div class="project">
-            <h3
-              data-en="Personal Portfolio Website"
-              data-es="Sitio web de portafolio personal"
-            >
-              Personal Portfolio Website
-            </h3>
-            <p
-              data-en="This website you're currently viewing! Built with HTML, CSS, and JavaScript to showcase my skills and projects."
-              data-es="¡Este sitio web que estás viendo actualmente! Construido con HTML, CSS y JavaScript para mostrar mis habilidades y proyectos."
-            >
-              This website you're currently viewing! Built with HTML, CSS, and
-              JavaScript to showcase my skills and projects.
-            </p>
-          </div>
-        </section>
-
-        <section id="contact">
-          <h2 data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
-          <p
-            data-en="Email: williamscaro194@hotmail.com"
-            data-es="Correo electrónico: williamscaro194@hotmail.com"
-          >
-            Email: williamscaro194@hotmail.com
-          </p>
-          <p>
-            LinkedIn:
-            <a
-              href="https://www.linkedin.com/in/williamscarog"
-              data-en="Williamscarog"
-              data-es="Williamscarog"
-              >Williamscarog</a
-            >
-          </p>
-          <p>
-            GitHub:
-            <a
-              href="https://github.com/williamscarog"
-              data-en="Williamscarog"
-              data-es="Williamscarog"
-              >Williamscarog</a
-            >
-          </p>
-        </section>
-
-        <section id="expertise">
-          <h2 data-en="Expertise" data-es="Expertise (Modificar)">Expertise</h2>
-          <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-          </ul>
-        </section>
-
-        <section id="languages">
-          <h2 data-en="Languages" data-es="Idiomas">Languages</h2>
-          <ul>
-            <li data-es="Español (Nativo)" data-en="Spanish (Native)">
-              Spanish (Native)
-            </li>
-            <li data-es="Inglés (Intermedio)" data-en="English (Intermediate)">
-              English (Intermediate)
-            </li>
-            <li data-es="Coreano (Básico)" data-en="Korean (Basic)">
-              Korean (Basic)
-            </li>
-          </ul>
-        </section>
-
-        <section id="education">
-          <h2 data-en="Education" data-es="Estudios">Education</h2>
-          <p>Oracle Next Education (One)</p>
-          <p
-            data-en="Backend Software Developer"
-            data-es="Desarrollador de software Backend"
-          >
-            Backend Software Developer
-          </p>
+      <section id="education">
+        <h2 data-en="Education" data-es="Estudios">Education</h2>
+        <strong>
+          <p>Oracle Next Education (ONE)</p>
+        </strong>
+        <p data-en="Backend Software Developer" data-es="Desarrollador De Software Backend">
+          Backend Software Developer
+        </p>
+        <em>
           <p data-en="2024 - Present" data-es="2024 - Presente">
             2024 - Present
           </p>
-          <br />
+        </em>
+        <br />
 
-          <p
-            data-en="Las Americas Institute of technology (ITLA)"
-            data-es="Instituto Tecnológico de las Américas (ITLA)"
-          >
+        <strong>
+          <p data-en="Las Americas Institute of technology (ITLA)"
+            data-es="Instituto Tecnológico de las Américas (ITLA)">
             Las Americas Institute of technology (ITLA)
           </p>
-          <p
-            data-en="Superior Tecnic in Software Development"
-            data-es="Técnico Superior en Desarrollo de Software"
-          ></p>
+        </strong>
+        <p data-en="Associate Degree in Software Development." data-es="Técnico Superior en Desarrollo de Software.">
+          Associate Degree in Software Development.
+        </p>
+        <em>
           <p>2016 - 2021</p>
-          <br />
+        </em>
+        <br />
 
-          <p
-            data-en="Las Americas Institute of technology (ITLA)"
-            data-es="Instituto Tecnológico de las Américas (ITLA)"
-          >
+        <strong>
+          <p data-en="Las Americas Institute of technology (ITLA)"
+            data-es="Instituto Tecnológico de las Américas (ITLA)">
             Las Americas Institute of technology (ITLA)
           </p>
-          <p data-en="English (Yes program)" data-es="Inglés (Programa Yes)">
-            English (Yes program)
-          </p>
+        </strong>
+        <p data-en="English Course (Yes program)" data-es="Curso Inglés (Programa Yes)">
+          English Course (Yes program)
+        </p>
+        <em>
           <p>2014 - 2016</p>
-          <p data-en="Level B1 (Intermediate)" data-es="Nivel: B1 (Intermedio)">
-            Level B1 (Intermediate)
-          </p>
-          <br />
+        </em>
+        <p data-en="Level B1 (Intermediate)" data-es="Nivel: B1 (Intermedio)">
+          Level B1 (Intermediate)
+        </p>
+        <br />
 
-          <p
-            data-en="Francisco del Rosario Sanchez High School"
-            data-es="Liceo Francisco de Rosario Sánchez"
-          >
+        <strong>
+          <p data-en="Francisco del Rosario Sanchez High School" data-es="Liceo Francisco de Rosario Sánchez">
             Francisco del Rosario Sanchez High School
           </p>
-          <p data-en="High School" data-es="Secundaria">High School</p>
-          <p data-en="Finalized 2013" data-es="Finalizada en 2013">
-            Finalized 2013
+        </strong>
+        <p data-en="High School" data-es="Secundaria">High School</p>
+        <em>
+          <p data-en="Finalized 2016" data-es="Finalizada en 2016">
+            Finalized 2016
           </p>
-        </section>
+        </em>
+      </section>
 
-        <section id="references">
-          <h2 data-en="References" data-es="Referencias">References</h2>
-          <ul>
-            <li>Carlos Alfredo Hernandez</li>
-            <p>carlosalfredohp15@gmail.com</p>
-            <p
-              data-en="Phone: +1 (829) 933-4045"
-              data-es="Teléfono: +1 (829) 933-4045"
-            >
-              Phone: +1 (829) 933-4045
-            </p>
-          </ul>
-        </section>
-      </div>
-
-      <footer>
-        <p
-          data-en="© 2024 Williams Caro G. All rights reserved."
-          data-es="© 2024 Williams Caro G. Todos los derechos reservados."
-        >
-          © 2024 Williams Caro G. All rights reserved.
-        </p>
-      </footer>
+      <section id="references">
+        <h2 data-en="References" data-es="Referencias">References</h2>
+        <ul>
+          <li>Carlos Alfredo Hernandez</li>
+          <p>carlosalfredohp15@gmail.com</p>
+          <p data-en="Phone: +1 (829) 933-4045" data-es="Teléfono: +1 (829) 933-4045">
+            Phone: +1 (829) 933-4045
+          </p>
+        </ul>
+      </section>
     </div>
 
-    <script src="portfolio-script.js"></script>
-  </body>
+    <footer>
+      <p data-en="© 2024 Williams Caro G. All rights reserved."
+        data-es="© 2024 Williams Caro G. Todos los derechos reservados.">
+        © 2024 Williams Caro G. All rights reserved.
+      </p>
+    </footer>
+  </div>
+
+  <script src="portfolio-script.js"></script>
+</body>
+
 </html>
