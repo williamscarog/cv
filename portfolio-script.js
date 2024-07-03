@@ -10,7 +10,9 @@ languageToggle.addEventListener("click", () => {
 
 function updateLanguage() {
   document.querySelectorAll("[data-en]").forEach((elem) => {
-    elem.textContent = elem.getAttribute(`data-${currentLanguage}`);
+    if (elem.tagName !== 'I' && !elem.querySelector('code')) {
+      elem.textContent = elem.getAttribute(`data-${currentLanguage}`);
+    }
   });
 }
 
@@ -52,10 +54,10 @@ const downloadPDF = document.getElementById("downloadPDF");
 downloadPDF.addEventListener("click", () => {
   const element = document.getElementById("portfolio-content");
   const opt = {
-    margin: 10,
+    margin: [10, 10, 10, 10],
     filename: "Williamscarog_cv.pdf",
     image: { type: "jpeg", quality: 0.98 },
-    html2canvas: { scale: 2 },
+    html2canvas: { scale: 2, logging: true, dpi: 192, letterRendering: true },
     jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
   };
 

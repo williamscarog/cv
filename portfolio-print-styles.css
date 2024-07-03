@@ -1,3 +1,31 @@
+/* Optimize Download PDF */
+@media print {
+  body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 10mm;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  h2 {
+    page-break-after: avoid;
+  }
+
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+}
+
+/* Delete Style by default */
 @page {
   margin: 0;
 }
@@ -14,6 +42,16 @@ body {
 header {
   text-align: center;
   margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
 }
 
 header h1 {
@@ -43,7 +81,6 @@ h2 {
   border-bottom: 1px solid #333;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  color: #444444;
 }
 
 ul {
@@ -58,6 +95,60 @@ footer {
   text-align: center;
   font-size: 10pt;
   margin-top: 20px;
+}
+
+/* Skills */
+
+#skills h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#skills h2:after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#skills li i {
+  margin-right: 10px;
+}
+
+#skills li strong {
+  color: #000;
+  margin-right: 5px;
+}
+
+#skills code {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
 }
 
 /* Add a decorative background */
@@ -111,5 +202,3 @@ body::before {
 header {
   padding-top: 60px;
 }
-
-.expBold {}
